@@ -1,0 +1,36 @@
+<Page1>:
+    md_bg_color: [1,1,0,1]
+    name:"Page1"
+    MDRectangleFlatButton:
+        text:"[b]fr[/b]"
+        pos_hint:{"center_x":.9 , "center_y":.9}
+        on_release:app.Changer_language(self)
+
+    MDLabel:
+        id:Page1_1
+        text: ""
+        font_style:"H4"
+        markup:True
+        halign:"center"
+        pos_hint:{"center_y":.65}
+    
+    Image:
+        source: "CEET.png"
+        pos_hint:{"center_x":.5,"center_y":.5}
+    
+    MDLabel:
+        id:Page1_2
+        text: ""
+        font_style:"Caption"
+        markup:True
+        halign:"center"
+        pos_hint:{"center_y":.3}
+    
+    MDRaisedButton:
+        id:Page1_3
+        text:""
+        on_release:app.Go(self)
+        size_hint:.3,.05
+        font_size:20
+        pos_hint:{"center_x":.5,"center_y":.2}
+        elevation:3
